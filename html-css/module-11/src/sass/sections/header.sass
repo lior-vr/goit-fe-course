@@ -1,0 +1,144 @@
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))),
+    url(../images/background/bg-header-min.png);
+  background-image: -o-linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)),
+    url(../images/background/bg-header-min.png);
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)),
+    url(../images/background/bg-header-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $colorffffff;
+  padding: 26px 0 134px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)),
+      url(../images/background/bg-header@2x-min.png);
+  }
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  @extend %flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin: 0 0 192px;
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    &-link {
+      text-decoration: none;
+      color: $colorffffff;
+      position: relative;
+
+      &:hover {
+        color: $colorfce38a;
+        -webkit-transition: width 0.2s linear;
+        -o-transition: width 0.2s linear;
+        transition: width 0.2s linear;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        display: block;
+        width: 0%;
+        content: "";
+        height: 3px;
+        bottom: -10px;
+        background-color: $colorfce38a;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-transition: width 0.2s linear;
+        -o-transition: width 0.2s linear;
+        transition: width 0.2s linear;
+      }
+    }
+
+    &-link_cart {
+      width: 18px;
+      height: 15px;
+
+      fill: $colorffffff;
+
+      &:hover {
+        fill: $colorfce38a;
+      }
+    }
+
+    &-link_glass {
+      width: 18px;
+      height: 18px;
+      fill: #ffffff;
+
+      &:hover {
+        fill: $colorfce38a;
+      }
+    }
+
+    &-item {
+      font-family: $font-montserrat;
+      @include font(14px, 400, 17px);
+      text-transform: uppercase;
+      margin-right: 56px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.logotype {
+  @include font(30px, 700, 36px);
+  font-family: $font-montserrat;
+  color: $colorffffff;
+  text-decoration: none;
+
+  & span {
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  margin-bottom: 42px;
+  font-family: $font-kaushan;
+  font-size: 72px;
+  line-height: 86px;
+  text-align: center;
+
+  &-welcome {
+    margin-bottom: 110px;
+    @include font(150px, 700, 180px);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 100px;
+    font-family: $font-montserrat;
+  }
+}
+
+.learn-more {
+  text-transform: uppercase;
+  font-family: font-montserrat;
+  @include font(14px, 700, 16px);
+  color: $colorffffff;
+  border: 3px solid #ffffff;
+  display: block;
+  width: 158px;
+  height: 38px;
+  text-align: center;
+  padding-top: 8px;
+  margin: 0 auto;
+  margin-bottom: 230px;
+}

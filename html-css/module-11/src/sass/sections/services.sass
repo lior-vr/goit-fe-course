@@ -1,0 +1,84 @@
+.services__title {
+  text-align: center;
+  font-family: $font-montserrat;
+  @include font(30px, 700, 36px);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 112px;
+  padding-top: 54px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  & span {
+    font-family: $font-kaushan;
+    @include font(24px, 400, 29px);
+    text-transform: lowercase;
+  }
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  @extend %flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
+  &-item {
+    width: 382px;
+    margin-bottom: 102px;
+
+    &_photography {
+      background-image: url(../images/icons/services/alarm.svg);
+      background-repeat: no-repeat;
+      background-position: 22px 4px;
+    }
+
+    &_desing {
+      background-image: url(../images/icons/services/linegraph.svg);
+      background-repeat: no-repeat;
+      background-position: 22px 4px;
+    }
+
+    &_creativity {
+      background-image: url(../images/icons/services/computer.svg);
+      background-repeat: no-repeat;
+      background-position: 22px 4px;
+    }
+
+    &_seo {
+      background-image: url(../images/icons/services/book.svg);
+      background-repeat: no-repeat;
+      background-position: 22px 4px;
+    }
+
+    &_css {
+      background-image: url(../images/icons/services/home.svg);
+      background-repeat: no-repeat;
+      background-position: 22px 4px;
+    }
+
+    &_digital {
+      background-image: url(../images/icons/services/image.svg);
+      background-repeat: no-repeat;
+      background-position: 22px 4px;
+    }
+  }
+}
+
+.services__name {
+  font-family: $font-montserrat;
+  @include font(14px, 400, 17px);
+  text-transform: uppercase;
+  padding-left: 82px;
+  padding-bottom: 20px;
+}
+
+.services__about {
+  @include font(15px, 400, 18px);
+  color: $color999999;
+  padding-left: 82px;
+}

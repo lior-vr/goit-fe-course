@@ -1,0 +1,94 @@
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  @extend %flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 62px;
+
+  &__text {
+    @include font(14px, 400, 17px);
+    font-family: $font-montserrat;
+  }
+
+  &__link {
+    @include font(14px, 400, 17px);
+    font-family: $font-montserrat;
+    text-decoration: none;
+    color: $colorf38181;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 1200px;
+    position: absolute;
+    background-color: rgb(229, 229, 229);
+    top: 0;
+  }
+
+  & div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &__text::before {
+    content: "\00A9";
+  }
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  &__input {
+    @include font(15px, 300, 24px);
+    width: 230px;
+    height: 40px;
+    border-width: 1px;
+    border-right: none;
+    border-color: #e7e7e7;
+    padding-left: 10px;
+    font-style: italic;
+    color: rgb(39, 41, 41);
+
+    &::-webkit-input-placeholder {
+      color: #ccc;
+    }
+
+    &::-moz-placeholder {
+      color: #ccc;
+    }
+
+    &:-ms-input-placeholder {
+      color: #ccc;
+    }
+
+    &::-ms-input-placeholder {
+      color: #ccc;
+    }
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(149, 225, 211);
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: font-montserrat;
+    @include font(14px, 700, 17px);
+    cursor: pointer;
+  }
+}

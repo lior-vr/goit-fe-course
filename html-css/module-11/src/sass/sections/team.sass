@@ -1,0 +1,198 @@
+.team {
+  margin-bottom: 82px;
+
+  &__title {
+    margin-bottom: 88px;
+    text-align: center;
+    font-family: $font-montserrat;
+    @include font(30px, 700, 36px);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 112px;
+    padding-top: 54px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    & span {
+      font-family: $font-kaushan;
+      @include font(24px, 400, 29px);
+      text-transform: lowercase;
+    }
+
+    &::after {
+      display: block;
+      width: 60px;
+      content: "";
+      height: 3px;
+      bottom: -40px;
+      background-color: $colorf38181;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    &-info {
+      @include font(15px, 400, 29px);
+      color: $color999999;
+      text-align: center;
+      max-width: 980px;
+      margin: 0 auto 92px;
+    }
+  }
+
+  &__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    @extend %flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
+    &-list {
+      width: 380px;
+    }
+
+    &-item {
+      margin-bottom: 28px;
+      position: relative;
+
+      &:hover {
+        -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+        transform: translate(-10px, -10px);
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+
+        -webkit-box-shadow: 10px 10px $color95e1d3;
+        box-shadow: 10px 10px $color95e1d3;
+
+        & .overlay {
+          visibility: visible;
+          opacity: 1;
+          -webkit-transition: opacity 0.2s linear;
+          -o-transition: opacity 0.2s linear;
+          transition: opacity 0.2s linear;
+        }
+      }
+    }
+
+    &-name {
+      font-family: $font-montserrat;
+      text-transform: uppercase;
+      @include font(14px, 400, 1.2);
+      text-align: center;
+      margin-bottom: 13px;
+    }
+
+    &-position {
+      @include font(15px, 300, 1.6);
+      font-style: italic;
+      font-weight: 300;
+      color: $color999999;
+      line-height: 1.6;
+      text-align: center;
+    }
+  }
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  &__item-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 56px;
+    height: 56px;
+
+    background-color: $colorfce38a;
+
+    &:hover {
+      background-color: $color95e1d3;
+      -webkit-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
+    }
+
+    &-wrapper {
+      fill: $colorf38181;
+    }
+
+    &_facebook {
+      width: 13px;
+      height: 26px;
+    }
+
+    &_twitter {
+      width: 26px;
+      height: 22px;
+    }
+
+    &_pinterest {
+      width: 21px;
+      height: 26px;
+    }
+
+    &_instagram {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__item:hover .social-list__item-link-wrapper {
+    fill: $colorffffff;
+  }
+
+  &__item:hover .social-list__item-link {
+    background-color: $colorf38181;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: -webkit-gradient(linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgba(243, 129, 129, 0.9)));
+  background: -o-linear-gradient(bottom,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9));
+  background: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9));
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
