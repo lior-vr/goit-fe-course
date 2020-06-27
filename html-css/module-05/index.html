@@ -3,216 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module-05</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="conteiner">
-        <nav class="navigation clearfix">
-          <a href="#" class="logotype">mart</a>
-          <ul class="navigation_list clearfix">
-            <li class="navigation_list-item">
-              <a href="#" class="navigation_list-link">Home</a>
-            </li>
-            <li class="navigation_list-item">
-              <a href="#" class="navigation_list-link">About Us</a>
-            </li>
-            <li class="navigation_list-item">
-              <a href="#" class="navigation_list-link">page</a>
-            </li>
-            <li class="navigation_list-item">
-              <a href="#" class="navigation_list-link">shop</a>
-            </li>
-            <li class="navigation_list-item">
-              <a href="#" class="navigation_list-link">Blog</a>
-            </li>
-            <li class="navigation_list-item">
-              <a href="#" class="navigation_list-link">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
+    <nav class="nav-container clearfix">
+      <a class="nav-logo" href="#">mart</a>
+      <ul class="site-navigation clearfix">
+        <li class="navigation-item"><a class="nav-link" href="#">home</a></li>
+        <li class="navigation-item">
+          <a class="nav-link" href="#">about us</a>
+        </li>
+        <li class="navigation-item"><a class="nav-link" href="#">page</a></li>
+        <li class="navigation-item"><a class="nav-link" href="#">shop</a></li>
+        <li class="navigation-item"><a class="nav-link" href="#">blog</a></li>
+        <li class="navigation-item">
+          <a class="nav-link" href="#">contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="slides">
+        <h1>affordable paris tours</h1>
+        <h3>city tours / tour tickets/ tour guides</h3>
+        <button class="slider-ctrl slider-prew">
+          <img src="./IMG/prew.png" alt="" />
+        </button>
+        <button class="slider-ctrl slider-next">
+          <img src="./IMG/next.png" alt="" />
+        </button>
       </div>
     </header>
     <main>
-      <div class="bg-title">
-        <div class="conteiner button clearfix">
-          <button class="bg-title_button prev">
-            <span class="visually-hidden">left button</span>
-          </button>
-          <button class="bg-title_button next">
-            <span class="visually-hidden">right button</span>
-          </button>
-        </div>
-        <div class="flip">
-          <h2 class="flipping_menu">afforable paris tours</h2>
-          <p class="flipping_menu-about">
-            city tours / tour ticket / tour guides
-          </p>
-        </div>
-      </div>
-      <section class="product">
-        <div class="conteiner">
-          <div class="title-products">
-            <h2>new collection</h2>
+      <section class="products">
+        <h2 class="headline">new collection</h2>
+        <div class="clearfix">
+          <div class="item-card clearfix">
+            <div class="overlay"></div>
+            <div class="card-control">
+              <button type="button" class="overlay-button">
+                <img src="./IMG/like.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/compare.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/later.png" alt="" /></button
+              ><button type="button" class="overlay-add-to-cart">
+                <img src="./IMG/busket.png" alt="" />
+                <span class="button-text"> add to cart</span>
+              </button>
+            </div>
+            <img src="./IMG/item1.png" alt="blue tshirt" />
+            <span class="item-name">blue tshirt</span>
+            <span class="item-price">$26</span>
           </div>
-          <div class="collection">
-            <ul class="collection_list clearfix">
-              <li class="link-info clearfix">
-                <div class="product-card">
-                  <img
-                    class="image-product"
-                    src="./img/item1.png"
-                    width="255"
-                    height="282"
-                    alt="blue tshirt"
-                  />
-                </div>
-                <div class="product-name">
-                  <a href="#">
-                    <h3>blue tshirt</h3>
-                  </a>
-                </div>
-                <div class="product-price">
-                  <h3>26</h3>
-                </div>
-                <div class="overlay">
-                  <button class="icons_button icons_button_heart">
-                    <span class="visually-hidden">Like button</span>
-                  </button>
-                  <button class="icons_button icons_button_versus">
-                    <span class="visually-hidden">Versus button</span>
-                  </button>
-                  <button class="icons_button icons_button_clock">
-                    <span class="visually-hidden">Clock button</span>
-                  </button>
-                  <button class="icons_button-add">
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </li>
-              <li class="link-info clearfix">
-                <div class="product-card">
-                  <img
-                    class="image-product"
-                    src="./img/item2.png"
-                    width="255"
-                    height="282"
-                    alt="woman shirt"
-                  />
-                </div>
-                <div class="product-name">
-                  <a href="#">
-                    <h3>woman shirt</h3>
-                  </a>
-                </div>
-                <div class="product-price">
-                  <h3>31</h3>
-                </div>
-                <div class="overlay">
-                  <button class="icons_button icons_button_heart">
-                    <span class="visually-hidden">Like button</span>
-                  </button>
-                  <button class="icons_button icons_button_versus">
-                    <span class="visually-hidden">Versus button</span>
-                  </button>
-                  <button class="icons_button icons_button_clock">
-                    <span class="visually-hidden">Clock button</span>
-                  </button>
-                  <button class="icons_button-add">
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </li>
-              <li class="link-info clearfix">
-                <div class="product-card">
-                  <img
-                    class="image-product"
-                    src="./img/item3.png"
-                    width="255"
-                    height="282"
-                    alt="yellow tshirt"
-                  />
-                </div>
-                <div class="product-name">
-                  <a href="#">
-                    <h3>yellow tshirt</h3>
-                  </a>
-                </div>
-                <div class="product-price">
-                  <h3>21</h3>
-                </div>
-                <div class="overlay">
-                  <button class="icons_button icons_button_heart">
-                    <span class="visually-hidden">Like button</span>
-                  </button>
-                  <button class="icons_button icons_button_versus">
-                    <span class="visually-hidden">Versus button</span>
-                  </button>
-                  <button class="icons_button icons_button_clock">
-                    <span class="visually-hidden">Clock button</span>
-                  </button>
-                  <button class="icons_button-add">
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </li>
-              <li class="link-info clearfix">
-                <div class="product-card">
-                  <img
-                    class="image-product"
-                    src="./img/item4.png"
-                    width="255"
-                    height="282"
-                    alt="cool lingerie"
-                  />
-                </div>
-                <div class="product-name">
-                  <a href="#">
-                    <h3>cool lingerie</h3>
-                  </a>
-                </div>
-                <div class="product-price">
-                  <h3>56</h3>
-                </div>
-                <div class="overlay">
-                  <button class="icons_button icons_button_heart">
-                    <span class="visually-hidden">Like button</span>
-                  </button>
-                  <button class="icons_button icons_button_versus">
-                    <span class="visually-hidden">Versus button</span>
-                  </button>
-                  <button class="icons_button icons_button_clock">
-                    <span class="visually-hidden">Clock button</span>
-                  </button>
-                  <button class="icons_button-add">
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
+          <div class="item-card clearfix">
+            <div class="overlay"></div>
+            <div class="card-control">
+              <button type="button" class="overlay-button">
+                <img src="./IMG/like.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/compare.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/later.png" alt="" /></button
+              ><button type="button" class="overlay-add-to-cart">
+                <img src="./IMG/busket.png" alt="" />
+                <span class="button-text"> add to cart</span>
+              </button>
+            </div>
+            <img src="./IMG/item2.png" alt="woman shirt" />
+            <span class="item-name">woman shirt</span>
+            <span class="item-price">$31</span>
+          </div>
+          <div class="item-card clearfix">
+            <div class="overlay"></div>
+            <div class="card-control">
+              <button type="button" class="overlay-button">
+                <img src="./IMG/like.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/compare.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/later.png" alt="" /></button
+              ><button type="button" class="overlay-add-to-cart">
+                <img src="./IMG/busket.png" alt="" />
+                <span class="button-text"> add to cart</span>
+              </button>
+            </div>
+            <img src="./IMG/item3.png" alt="yellow tshirt" />
+            <span class="item-name">yellow tshirt</span>
+            <span class="item-price">$21</span>
+          </div>
+          <div class="item-card clearfix">
+            <div class="overlay"></div>
+            <div class="card-control">
+              <button type="button" class="overlay-button">
+                <img src="./IMG/like.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/compare.png" alt="" /></button
+              ><button type="button" class="overlay-button">
+                <img src="./IMG/later.png" alt="" /></button
+              ><button type="button" class="overlay-add-to-cart">
+                <img src="./IMG/busket.png" alt="" />
+                <span class="button-text"> add to cart</span>
+              </button>
+            </div>
+            <img src="./IMG/item4.png" alt="cool shirt" />
+            <span class="item-name">cool lingerie</span>
+            <span class="item-price">$56</span>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer-info conteiner">
-      <div>
-        <p class="info">
-          All Rights Reserved
-          <span class="dokan"> Dokan</span> | Designed
-          <a href="#" class="info-blue">ThemenGraph</a>
-        </p>
-      </div>
+    <footer>
+      <p>Rights Reserved © Dokan | Designed <span>ThemenGraph</span></p>
     </footer>
   </body>
 </html>
